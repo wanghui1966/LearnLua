@@ -1,0 +1,26 @@
+此工程为一个tolua++的使用示例（支持热更新，并可以保持热更新中的状态）
+1. main.cpp为工程入口
+2. ToluaPackage.h中封装了tolua++的使用，其为一个namespace
+3. ToluaEngine类为一个单例类，通过ToluaPackage负责工程与lua的所有交互
+
+实现功能：
+1. 导出C++全局函数给lua使用
+2. 导出C++类函数给lua使用
+3. C++调用lua全局函数
+
+编译命令：./build_all.sh
+1. 调用命令：make clean，删除生成文件
+2. 调用命令：./tolua++.sh
+3. 调用命令：make
+
+前置：需lua和tolua++
+1. lua需lua-5.1.4版本
+
+2. tolua++安装(注意先后顺序)
+unzip tolua++-1.0.93.zip
+cd tolua++-1.0.93\src\lib
+make
+即可生成libtolua++.a文件，是tolua++的库文件
+cd tolua++-1.0.93\src\bin
+make
+即可生成tolua++文件，是将.pkg文件生成.h和.cpp文件的工具

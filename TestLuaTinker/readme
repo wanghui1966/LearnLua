@@ -1,0 +1,17 @@
+此工程为一个lua_tinker使用示例(支持热更新，并在热更新的同时能够保持lua状态机里的状态)
+1. main.cpp为工程入口
+2. LuaTinkerEngine类为一个单例类，负责工程与lua的所有交互
+3. LuaTinkerPackage类为一个单例类，负责与lua_tinker的交互
+
+实现功能：
+1. C调用lua中全局函数
+2. C调用lua中事件，支持触发多个lua函数
+3. C取lua中的全局value，全局table中的value
+4. lua调用C的全局函数
+5. lua调用C的类函数 
+6. 热更新(可以保持lua状态机里的状态)
+
+LuaTinker-master.zip为原版的lua_tinker源码(不支持linux上运行等)
+LuaTinker.zip为经过改写后的lua_tinker源码，加了和改了很多代码
+
+使用的lua库版本为lua-5.1.4

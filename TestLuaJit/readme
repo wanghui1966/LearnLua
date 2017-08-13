@@ -1,0 +1,10 @@
+编译luajit库
+1. http://luajit.org/download.html下载LuaJIT-2.0.4版本，并解压
+2. 进入LuaJIT-2.0.4\src目录执行：make
+3. 进入LuaJIT-2.0.4目录执行：sudo make install PREFIX=/usr/local/luajit，luajit即被安装到/usr/local/luajit目录下
+用法和lua库一模一样
+
+lua_one.cpp：C++与lua栈操作
+lua_two.cpp：C++调用.lua文件，并取值
+lua_three.cpp：C++创建lua的table，并使用
+lua_four.cpp：lua调用C++函数
