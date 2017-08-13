@@ -1,0 +1,7 @@
+用来测试C++和lua的交互，以及一些lua库的基本使用
+
+TestLua：使用lua基础库来测试C++和lua的基本交互
+TestLuaJit：使用luajit库来测试C++和lua的基本交互
+TestLuaTinker：测试luatinker库的功能
+TestTolua++WithLua：测试tolua++库功能，使用lua库编译tolua++
+TestToLua++WithLuaJit：测试tolua++库功能，使用luajit库编译tolua++
